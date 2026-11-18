@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 | JavaScript Logic Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <p class="tag">JAVASCRIPT PRACTICE · DAY 04</p>
+            <h1>Logic Playground<span>.</span></h1>
+            <p>Conditional Statements & Loops</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <div>
+                <h2>Practice. Execute. Learn.</h2>
+                <p>Explore JavaScript logic with interactive exercises.</p>
+            </div>
+            <div class="progress">
+                <strong>14</strong>
+                <span>Challenges</span>
+            </div>
+        </section>
+
+        <!-- PART A -->
+
+        <section class="task-section">
+            <div class="section-heading">
+                <span class="section-number">01</span>
+                <div>
+                    <h2>Conditional Statements</h2>
+                    <p>Make decisions using JavaScript conditions.</p>
+                </div>
+            </div>
+
+            <div class="task-grid">
+
+                <article class="task-card">
+                    <h3>01. Even or Odd</h3>
+                    <p>Check whether a number is even or odd.</p>
+                    <input type="number" id="evenInput" placeholder="Enter a number">
+                    <button onclick="checkEvenOdd()">Check Result</button>
+                    <div class="result" id="evenResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>02. Largest of Three</h3>
+                    <p>Find the largest among three numbers.</p>
+                    <div class="input-group">
+                        <input type="number" id="numA" placeholder="A">
+                        <input type="number" id="numB" placeholder="B">
+                        <input type="number" id="numC" placeholder="C">
+                    </div>
+                    <button onclick="findLargest()">Find Largest</button>
+                    <div class="result" id="largestResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>03. Leap Year</h3>
+                    <p>Determine whether a year is a leap year.</p>
+                    <input type="number" id="yearInput" placeholder="Enter year">
+                    <button onclick="checkLeapYear()">Check Year</button>
+                    <div class="result" id="leapResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>04. Electricity Bill</h3>
+                    <p>Calculate your electricity bill based on units.</p>
+                    <input type="number" id="unitsInput" placeholder="Enter units" min="0">
+                    <button onclick="calculateBill()">Calculate Bill</button>
+                    <div class="result" id="billResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>05. Day Name</h3>
+                    <p>Enter a number between 1 and 7.</p>
+                    <input type="number" id="dayInput" placeholder="1 - 7" min="1" max="7">
+                    <button onclick="findDay()">Find Day</button>
+                    <div class="result" id="dayResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>06. Login Check</h3>
+                    <p>Validate username, password and account status.</p>
+                    <input type="text" id="usernameInput" placeholder="Username">
+                    <input type="password" id="passwordInput" placeholder="Password">
+                    <label class="check-label">
+                        <input type="checkbox" id="blockedInput">
+                        Account is blocked
+                    </label>
+                    <button onclick="checkLogin()">Login</button>
+                    <div class="result" id="loginResult">Your result will appear here.</div>
+                    <small>Demo credentials: sharon / 12345</small>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PART B -->
+
+        <section class="task-section">
+            <div class="section-heading">
+                <span class="section-number">02</span>
+                <div>
+                    <h2>Loops</h2>
+                    <p>Repeat operations and solve problems efficiently.</p>
+                </div>
+            </div>
+
+            <div class="task-grid">
+
+                <article class="task-card">
+                    <h3>07. Multiplication Table</h3>
+                    <p>Generate a multiplication table from 1 to 10.</p>
+                    <input type="number" id="tableInput" placeholder="Enter a number">
+                    <button onclick="generateTable()">Generate Table</button>
+                    <div class="result output-list" id="tableResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>08. Sum of Digits</h3>
+                    <p>Calculate the sum of all digits.</p>
+                    <input type="number" id="sumInput" placeholder="Example: 1234">
+                    <button onclick="calculateSum()">Calculate Sum</button>
+                    <div class="result" id="sumResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>09. Reverse a Number</h3>
+                    <p>Reverse a number without converting it to a string.</p>
+                    <input type="number" id="reverseInput" placeholder="Example: 1234">
+                    <button onclick="reverseNumber()">Reverse</button>
+                    <div class="result" id="reverseResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>10. Palindrome String</h3>
+                    <p>Check whether a word reads the same backwards.</p>
+                    <input type="text" id="palindromeInput" placeholder="Enter a word">
+                    <button onclick="checkPalindrome()">Check Palindrome</button>
+                    <div class="result" id="palindromeResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>11. FizzBuzz</h3>
+                    <p>Print numbers from 1 to 30 using conditions.</p>
+                    <button onclick="runFizzBuzz()">Run FizzBuzz</button>
+                    <div class="result output-list" id="fizzResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>12. Prime Check</h3>
+                    <p>Determine whether a number is prime.</p>
+                    <input type="number" id="primeInput" placeholder="Enter a number">
+                    <button onclick="checkPrime()">Check Prime</button>
+                    <div class="result" id="primeResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>13. Count Vowels</h3>
+                    <p>Count vowels in a sentence using for...of.</p>
+                    <input type="text" id="vowelInput" value="javascript is awesome">
+                    <button onclick="countVowels()">Count Vowels</button>
+                    <div class="result" id="vowelResult">Your result will appear here.</div>
+                </article>
+
+                <article class="task-card">
+                    <h3>14. Star Pattern</h3>
+                    <p>Generate a pattern using nested loops.</p>
+                    <button onclick="generatePattern()">Generate Pattern</button>
+                    <div class="result pattern-output" id="patternResult">Your result will appear here.</div>
+                </article>
+
+            </div>
+        </section>
+
+        <footer>
+            <h2>Keep Learning<span>.</span></h2>
+            <p>Day 04 · JavaScript Fundamentals</p>
+            <p>Designed & Developed by Sharon</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

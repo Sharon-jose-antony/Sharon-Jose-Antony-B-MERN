@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #101216;
+    color: #f1f2f5;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 65px 8%;
+    background: linear-gradient(120deg, #191d25, #252b38);
+    border-bottom: 1px solid #343a47;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tag {
+    color: #a5b4fc;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(38px, 6vw, 65px);
+    margin: 12px 0;
+}
+
+header h1 span,
+footer h2 span {
+    color: #a5b4fc;
+}
+
+header p:last-child {
+    color: #a5aab6;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 25px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #191d25;
+    border: 1px solid #303642;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 55px;
+}
+
+.intro h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 23px;
+}
+
+.intro p {
+    color: #969eae;
+    font-size: 14px;
+}
+
+.progress {
+    text-align: center;
+    background: #292f3c;
+    padding: 12px 22px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress strong {
+    font-size: 26px;
+    color: #a5b4fc;
+}
+
+.progress span {
+    font-size: 12px;
+    color: #a5aab6;
+}
+
+.task-section {
+    margin-bottom: 65px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.section-number {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 27px;
+    color: #a5b4fc;
+    border-right: 2px solid #454d5d;
+    padding-right: 18px;
+}
+
+.section-heading h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 25px;
+}
+
+.section-heading p {
+    font-size: 13px;
+    color: #9299a8;
+}
+
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.task-card {
+    background: #191d25;
+    border: 1px solid #303642;
+    border-radius: 13px;
+    padding: 23px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.task-card:hover {
+    border-color: #7887bc;
+    transform: translateY(-3px);
+}
+
+.task-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.task-card p {
+    color: #979eac;
+    font-size: 13px;
+    margin-bottom: 18px;
+    min-height: 22px;
+}
+
+input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 12px 14px;
+    background: #101319;
+    border: 1px solid #363d4b;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 12px;
+    font-family: inherit;
+}
+
+input:focus {
+    border-color: #a5b4fc;
+}
+
+.input-group {
+    display: flex;
+    gap: 9px;
+}
+
+.input-group input {
+    min-width: 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #a5b4fc;
+    color: #141722;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: inherit;
+}
+
+button:hover {
+    background: #c2ccff;
+}
+
+.result {
+    margin-top: 14px;
+    background: #11151b;
+    border: 1px solid #303642;
+    color: #c5cbd7;
+    border-radius: 7px;
+    padding: 12px;
+    min-height: 44px;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.output-list {
+    max-height: 220px;
+    overflow-y: auto;
+    white-space: pre-line;
+}
+
+.pattern-output {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #a5b4fc;
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #c5cbd7;
+    margin: 3px 0 13px;
+}
+
+.check-label input {
+    accent-color: #a5b4fc;
+}
+
+.task-card small {
+    display: block;
+    margin-top: 10px;
+    color: #858e9f;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 15px;
+    border-top: 1px solid #303642;
+    color: #858e9f;
+    font-size: 13px;
+}
+
+footer h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 45px 7%;
+    }
+
+    main {
+        padding: 25px 16px;
+    }
+
+    .task-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .intro h2 {
+        font-size: 18px;
+    }
+
+    .section-heading h2 {
+        font-size: 20px;
+    }
+
+    .progress {
+        padding: 9px 13px;
+    }
+}
